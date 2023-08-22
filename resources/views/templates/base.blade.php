@@ -64,23 +64,7 @@
     </div>
 
 <!--    redes sociales-->
-    <div class="about" >
-        <div class="contact">
-            <h4>By: <em>Josue Arango</em></h4>
-        </div>
-        <div>
-        <a href="mailto:josarango24@gmail.com">
-            <i class="bi bi-google"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/josue-arango-289b03198/">
-            <i class="bi bi-linkedin"></i>
-        </a>
 
-        <a href="https://github.com/Arango155">
-            <i class="bi bi-github"></i>
-        </a>
-        </div>
-    </div>
 </div>
 
 

@@ -116,9 +116,11 @@ nav{
 
 }
 
-ul li:hover a{
+.style:hover {
+    background-color: #F8F8F8;
+}
 
-    /*background-color: #F8F9FA;*/
+a:hover {
     background-color: #F8F8F8;
 }
 
@@ -127,6 +129,15 @@ ul li:hover a{
     font-size: 40px;
 }
 
+.contact {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 2rem;
+}
+
+.contact a {
+    margin: 3px;
+}
 
 
 .navlink {
