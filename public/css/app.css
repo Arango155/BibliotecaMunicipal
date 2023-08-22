@@ -135,6 +135,10 @@ a:hover {
     padding-bottom: 2rem;
 }
 
+.space {
+    padding-top: 40px;
+}
+
 .contact a {
     margin: 3px;
 }
@@ -162,4 +166,20 @@ header a{
     font-size: 30px;
 
 }
+
+footer{
+    text-align: center;
+    background: #F8F9FA;
+    padding-top: 30px;
+}
+
+.contact a:hover{
+
+    background-color: white;
+}
+
+.space{
+    padding-bottom: 10px;
+}
+
 

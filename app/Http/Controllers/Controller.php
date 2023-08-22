@@ -29,6 +29,11 @@ class Controller extends BaseController
 
     }
 
+    function list(){
+        $items = Libro::all();
+        return view('list', compact('items'));
+    }
+
     function indexg(){
 
         $items = Categoria::orderBy('nombre','asc')->paginate(5);
@@ -139,6 +144,17 @@ class Controller extends BaseController
             ->paginate(5);
 
         return view('libros', ['items' => $items]);
+    }
+
+    public function buscar(Request $request)
+    {
+        $searchTerm = $request->input('search');
+
+        $items = Libro::where('nombre', 'like', '%' . $searchTerm . '%')
+            ->orWhere('autor', 'like', '%' . $searchTerm . '%')
+            ->paginate(5);
+
+        return view('list', ['items' => $items]);
     }
 
 }

@@ -56,35 +56,7 @@
             </ul></div></div>
 </div>
 
-<footer>
 
-
-    <div class="contact">
-        <Span>BY: JOSUE ARANGO </Span>
-        <a href="https://wa.me/54403980" target="_blank">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-        <a href="https://github.com/Arango155" target="_blank">
-            <i class="bi bi-github"></i>
-        </a>
-        <a
-            href="https://www.linkedin.com/in/josue-arango-289b03198/"
-            target="_blank"
-        >
-            <i class="bi bi-linkedin"></i>
-        </a>
-        <a
-            href="https://www.youtube.com/channel/UCI4nEkfMPVLZHZ8_6m9XOcQ"
-            target="_blank"
-        >
-            <i class="bi bi-youtube"></i>
-        </a>
-        <a href="https://www.instagram.com/jos.arango/" target="_blank">
-            <i class="bi bi-instagram"></i>
-        </a>
-
-    </div>
-</footer>
 
 
 

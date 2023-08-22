@@ -51,7 +51,7 @@
                     <a href="categorias" class="navlink">Categorias</a>
                 </li>
                 <li class="nav-item p-3 py-md-1">
-                    <a href="http://127.0.0.1:8000/reporte_alumno" class="navlink">Crear lista en excel</a>
+                    <a href="list" class="navlink">Lista de libros</a>
                 </li>
 
             </ul>
@@ -81,6 +81,41 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<div class="space"></div>
+<footer>
+
+
+    <div class="contact">
+        <a href="https://wa.me/54403980" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://github.com/Arango155" target="_blank">
+            <i class="bi bi-github"></i>
+        </a>
+        <a
+            href="https://www.linkedin.com/in/josue-arango-289b03198/"
+            target="_blank"
+        >
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a
+            href="https://www.youtube.com/channel/UCI4nEkfMPVLZHZ8_6m9XOcQ"
+            target="_blank"
+        >
+            <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/jos.arango/" target="_blank">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://arangoportfolio.netlify.app/">
+            <i class="bi bi-file-earmark-person"></i>
+        </a>
+
+    </div>
+    <h5 class="no">Desarrollado por: Josue Arango</h5>
+    <br>
+</footer>
 
 </body>
 </html>

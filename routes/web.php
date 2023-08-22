@@ -21,6 +21,8 @@ Route::get('home',[controller::class,'index']);
 
 Route::get('libros',[controller::class,'indexl'])->name('librosview');
 
+Route::get('list',[controller::class,'list'])->name('list');
+
 Route::get('add',[controller::class, 'add']);
 
 Route::post('store', [controller::class, 'store']);
@@ -46,6 +48,9 @@ Route::put('show{id}',[controller::class,'updatec'])->name('show');
 Route::get('excel',[controller::class,'excel']);
 
 Route::get('search',[controller::class,'search'])->name('items');
+
+Route::get('buscar',[controller::class,'buscar'])->name('buscar');
+
 
 //Route::get("/ver", [Controller::class,'ver']);
 
