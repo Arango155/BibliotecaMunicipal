@@ -82,8 +82,6 @@
 </div>
 <div class="space"></div>
 <footer>
-
-
     <div class="contact">
         <a href="https://wa.me/54403980" target="_blank">
             <i class="bi bi-whatsapp"></i>
