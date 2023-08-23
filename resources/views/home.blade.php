@@ -22,9 +22,9 @@
     </div></div>
 
 
-<div class="section" >
+<div class="container" >
 
-        <div >
+        <div class="section">
             <h3>"Desbloqueando palabras una pagina a la vez"</h3>
             <p > Ubicada en la intersección del conocimiento y la conectividad, nuestra biblioteca de páginas web se erige como un santuario digital para los buscadores de información,
                 inspiración y exploración. Con una colección virtual que abarca diversos temas y disciplinas,
@@ -37,6 +37,8 @@
                 digitales unidos por su entusiasmo compartido por el descubrimiento. Bienvenido a un espacio donde la extensión ilimitada del mundo digital converge con el encanto atemporal
                 de una biblioteca tradicional, creando un refugio único para el intelecto moderno. </p>
             <p > A través de la investigación, estamos mejorando la educacion a través de compromisos como: </p>
+        </div>
+    <div class="cards">
             <ul class="row row-cols-1 row-cols-md-3 g-3 list-unstyled">
                 <li><div class="card text-center bg-white border-light border-5 h-100 " ><div class="style card-body d-flex flex-column justify-content-center align-items-center" ><span class="fs-4">Conexiones sociales</span></div></div></li>
                 <li><div class="card text-center bg-white border-light border-5 h-100 "><div class="style card-body d-flex flex-column justify-content-center align-items-center" ><span class="fs-4" >Entretenimiento saludable</span></div></div></li>
@@ -53,7 +55,9 @@
                 <li><div class="card text-center bg-white border-light border-5 h-100" ><div class="style card-body d-flex flex-column "><span class="fs-4" >Desarrollo analitico</span></div></div></li>
                 <li><div class="card text-center bg-white border-light border-5 h-100" ><div class="style card-body d-flex flex-column "><span class="fs-4" >Ampliacion de perspectiva</span></div></div></li>
                 <li><div class="card text-center bg-white border-light border-5 h-100" ><div class="style card-body d-flex flex-column "><span class="fs-4" >Desarrollo de pensamiento critico</span></div></div></li>
-            </ul></div></div>
+            </ul>
+    </div>
+</div>
 </div>
 
 
