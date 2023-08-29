@@ -30,7 +30,7 @@
                                 <form action="{{route('items')}}" method="GET">
                                     <div class="btn-group">
                                         <input type="text" name="search" placeholder="Buscar..." class="form-control" value="">
-                                        <button type="submit"class="btn btn-primary">Buscar
+                                        <button type="submit"class="btn btn-primary"><i class="bi bi-search"></i>
                                         </button>
 
                                 </form>

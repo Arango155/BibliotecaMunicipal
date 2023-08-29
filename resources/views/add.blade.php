@@ -27,7 +27,7 @@
                     @endforeach
                 </select>
                 <label for="">Imagen </label>
-                <input type="file" name=" " class="form-control" required>
+                <input type="file" name="pic" class="form-control" required>
 
                 <br>
                 <a href="/libros" class="btn btn-info">

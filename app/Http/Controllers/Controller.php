@@ -18,7 +18,8 @@ class Controller extends BaseController
     function index()
     {
 
-        return view('home');
+        $items = Libro::all();
+        return view('list', compact('items'));
     }
 
     function indexl()
@@ -54,6 +55,7 @@ class Controller extends BaseController
             $libro->nombre = $request->post('nombre');
             $libro->autor = $request->post('autor');
             $libro->categoria_id = $request->post('categoria_id');
+
             $libro->save();
         }
         catch (\Exception $exception){
@@ -65,10 +67,16 @@ class Controller extends BaseController
 
     function storeC (Request $request)
     {
-        $categoria= new Categoria();
-        $categoria->id = $request->post('id');
-        $categoria->nombre = $request->post('nombre');
-        $categoria->save();
+        try {
+            $categoria = new Categoria();
+            $categoria->id = $request->post('id');
+            $categoria->nombre = $request->post('nombre');
+            $categoria->save();
+        }
+
+        catch (\Exception $exception){
+            return redirect()->route("categoriasview")->with("title","Error: Ha creado una categoria con el mismo codigo, este debe ser unico");
+        }
         return redirect()->route("categoriasview")->with("success", "Agregado con exito!");
 
     }

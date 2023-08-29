@@ -26,8 +26,12 @@
     float: left;
 }
 
-body{
+*{
+    font-family: 'SimpleSans', sans-serif;
+}
 
+.toggler:hover{
+    background: #efefef;
 }
 
 .container{
@@ -78,9 +82,6 @@ a {
   color: black;
 }
 
-body{
-    cursor: pointer;
-}
 
 input{
     cursor: pointer;
@@ -112,9 +113,6 @@ input{
     text-align: justify;
 }
 
-nav{
-
-}
 
 .style:hover {
     background-color: #F8F8F8;
@@ -131,8 +129,8 @@ a:hover {
 
 .contact {
     text-align: center;
-    font-size: 35px;
-    padding-bottom: 2rem;
+    font-size: 25px;
+    color: blue;
 }
 
 .space {
@@ -155,6 +153,15 @@ a:hover {
 
 }
 
+.header span{
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.header{
+    display: table-column;
+}
+
 header a{
     font-size: 20px;
     text-align: center;
@@ -169,14 +176,10 @@ header a{
 
 footer{
     text-align: center;
-    background: #F8F9FA;
-    padding-top: 30px;
+
+    padding-top: 50%;
 }
 
-.contact a:hover{
-
-    background-color: white;
-}
 
 .space{
     padding-bottom: 10px;

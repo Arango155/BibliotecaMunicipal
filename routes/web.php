@@ -13,11 +13,10 @@ use App\Http\Controllers\Controller as controller;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/',[controller::class,'list'])->name('list');
 
-Route::get('home',[controller::class,'index']);
+
+Route::get('home',[controller::class,'list']);
 
 Route::get('libros',[controller::class,'indexl'])->name('librosview');
 

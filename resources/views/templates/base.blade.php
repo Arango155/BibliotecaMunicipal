@@ -19,16 +19,16 @@
 
 
 <!--nav section-->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body">
         <div class="container-fluid">
-            <div>
-                <img src="https://mapasdeguatemala.com/wp-content/themes/wp-bootstrap-starter/map_app/image/adds/Municipalidad%20de%20Puerto%20Barrios.png" width="80px" height="90px">
+            <div class="header">
+                <img src="https://i.etsystatic.com/16421349/r/il/99a0b1/3585638490/il_fullxfull.3585638490_tigl.jpg" width="80px" height="90px">
 
-            <span class="navbar-brand mb-0 h1">Biblioteca Municipal</span>
+            <span>Biblioteca Municipal</span>
             </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                    <span>Menu</span>
+
             </button>
         </div>
 
@@ -50,9 +50,7 @@
                 <li class="nav-item p-3 py-md-1">
                     <a href="categorias" class="navlink">Categorias</a>
                 </li>
-                <li class="nav-item p-3 py-md-1">
-                    <a href="list" class="navlink">Lista de libros</a>
-                </li>
+
 
             </ul>
             <!-- enlaces redes sociales -->
@@ -106,11 +104,11 @@
         </a>
 
         <a href="https://arangoportfolio.netlify.app/">
-            <i class="bi bi-file-earmark-person"></i>
+            <i class="bi bi-file-earmark-person-fill"></i>
         </a>
 
     </div>
-    <h5 class="no">Desarrollado por: Josue Arango</h5>
+
     <br>
 </footer>
 
