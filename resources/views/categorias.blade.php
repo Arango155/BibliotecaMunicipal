@@ -7,10 +7,12 @@
 
 <div class="container">
     <div class="tab" >
-        <h3>Listado en el sistema</h3>
 
-            <div class="row">
+
+
                 <div class="col-sm-12">
+
+
                     @if($mensaje = \Illuminate\Support\Facades\Session::get('success'))
                     <div class="alert alert-success" role="alert">
                         {{ $mensaje }}
@@ -25,16 +27,34 @@
                         </div>
 
                         @endif
+                        <h3>Listado en el sistema</h3>
                         <!---->
                         <!---->
                         <!--            </div>-->
                         <!--            -->
                         <!--        </div>-->
-                        <p>
+                        <div class="head">
+
+                            <div class="right">
+                                <form action="{{route('items')}}" method="GET">
+                                    <div class="btn-group">
+                                        <input type="text" name="search" placeholder="Buscar..." class="form-control" value="">
+                                        <button type="submit"class="btn btn-primary"><i class="bi bi-search"></i>
+                                        </button>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+                        <div class="left">
                             <a href="/addC" class="btn btn-primary">
                                 <span>Agregar</span>
                             </a>
-                        </p>
+
+                        </div>
+
+                    </div>
                         <hr>
 
                         <p class="card-text">
@@ -102,6 +122,10 @@
 
                             <a href="/home" class="btn btn-primary">
                                 <span class="bi bi-arrow-return-left"></span>
+                            </a>
+
+                            <a  class="btn btn-primary" href="categorias">
+                                <span class="bi bi-arrow-clockwise" ></span>
                             </a>
 
                         </div>

@@ -7,10 +7,9 @@
 @section('body')
 
 <div class="container">
-    <div class="card">
-        <div class="card-header">
-            <h5>Agregar categoria</h5>
-        </div>
+    <div class="tab">
+            <h3>Agregar categoria</h3>
+
         <div class="card-body">
 
             <p class="card-text">

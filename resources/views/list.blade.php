@@ -19,7 +19,7 @@
     <div class="left">
 
         <a  class="btn btn-primary" href="list">
-            <span class="bi bi-bootstrap-reboot" ></span>
+            <span class="bi bi-arrow-clockwise" ></span>
         </a>
     </div></div>
 <div class="size">
@@ -32,7 +32,7 @@
                 <h5 class="card-title">{{$item->categoria->nombre}}</h5>
                 <p class="card-text">Autor: {{$item->autor}}</p>
 
-                <a href="#" class="btn btn-primary">Consultar</a>
+                <a href="#" id="{{$item->id}}" class="btn btn-primary">Consultar</a>
             </div>
         </div>
     </div>

@@ -5,11 +5,10 @@
 <div class="container">
 
     <div class="tab">
-        <h3>Editar libro</h3>
 
             <p class="card-text">
-
-            <form action="{{route('update', $item->id)}}" method="POST">
+            <form class="col-sm-12" action="{{route('update', $item->id)}}" method="POST">
+            <h3>Editar libro</h3>
                 @csrf
                 @method("PUT")
                 <label for="">ID</label>

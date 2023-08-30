@@ -5,11 +5,12 @@
 <div class="container">
 
     <div class="tab">
-        <h3>Editar categoria</h3>
+
 
             <p class="card-text">
 
-            <form action="{{route('show', $item->id)}}" method="POST">
+            <form class="col-sm-12" action="{{route('show', $item->id)}}" method="POST">
+            <h3>Editar categoria</h3>
                 @csrf
                 @method("PUT")
 

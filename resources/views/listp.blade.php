@@ -19,7 +19,7 @@
     <div class="left">
 
         <a  class="btn btn-primary" href="list">
-            <span class="bi bi-bootstrap-reboot" ></span>
+            <span class="bi bi-arrow-clockwise" ></span>
         </a>
     </div></div>
 <div class="size">

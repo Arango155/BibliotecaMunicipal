@@ -7,10 +7,11 @@
 
 <div class="container">
     <div class="tab">
-    <h3>Listado en el sistema</h3>
+
 
             <div>
                 <div class="col-sm-12">
+
                     @if($mensaje = \Illuminate\Support\Facades\Session::get('success'))
                     <div class="alert alert-success" role="alert">
                         {{ $mensaje }}
@@ -23,7 +24,7 @@
                         </div>
 
                         @endif
-
+                        <h3>Listado en el sistema</h3>
                         <div class="head">
 
                             <div class="right">
@@ -36,6 +37,7 @@
                                 </form>
 
                             </div>
+
                         </div>
                         <div class="left">
                             <a href="/add" class="btn btn-primary">
@@ -45,6 +47,7 @@
                                 <span class="bi bi-file-excel"></span>
                             </a>
                         </div>
+
 
                     </div>
 
@@ -135,7 +138,7 @@
                         </a>
 
                         <a  class="btn btn-primary" href="libros">
-                            <span class="bi bi-bootstrap-reboot" ></span>
+                            <span class="bi bi-arrow-clockwise" ></span>
                         </a>
 
 

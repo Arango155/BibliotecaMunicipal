@@ -162,7 +162,7 @@ a:hover {
 }
 
 .tab h3{
-    padding-left: 17%;
+
     font-weight: bold;
     padding-bottom: 2%;
 }
@@ -207,6 +207,10 @@ footer{
 
 .element{
     width: 18rem;
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 @media (max-width: 480px)
