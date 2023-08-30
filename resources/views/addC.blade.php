@@ -21,8 +21,8 @@
                 <input type="text" name="nombre" class="form-control" required>
 
                 <br>
-                <a href="home" class="btn btn-info">
-                    <span class="bi bi-arrow-return-left"></span> Regresar
+                <a href="home" class="btn btn-primary">
+                    <span class="bi bi-arrow-return-left"></span>
                 </a>
                 <button class="btn btn-primary">
                     <span class="bi bi-check"></span>Agregar
