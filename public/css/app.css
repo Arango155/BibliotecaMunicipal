@@ -205,6 +205,10 @@ footer{
 
 }
 
+.element{
+    width: 18rem;
+}
+
 @media (max-width: 480px)
 .header span {
     font-weight: bold;
@@ -243,6 +247,11 @@ footer{
     }
     .table{
         width: 100%;
+    }
+
+
+    .element{
+        width: 10rem;
     }
 
 }
