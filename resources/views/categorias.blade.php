@@ -77,39 +77,33 @@
                                     <div class="flex">
                                     <a href="{{route('modify',$item->id)}}" >
                                         <span>✏️</span>
-                                    </a>  <form action="{{ route('destroy', $item->id) }}" id="{{($item->id)}}">
-                                        <button type="submit">
+                                    </a>  <form  id="myForm" action="{{ route('destroy', $item->id) }}" id="{{($item->id)}}">
+                                        <a id="{{($item->id)}}" type="submit">
                                             <span>  🗑️</span>
-                                        </button>
+                                        </a>
                                     </form>
 
-                                    <script>
-                                        document.addEventListener("DOMContentLoaded", function() {
-                                            const form = document.getElementById("{{($item->id)}}");
-                                            form.addEventListener("submit", function(event) {
-                                                event.preventDefault();
-                                                Swal.fire({
-                                                    title: "Estas seguro de eliminar?",
-                                                    text: "No podras revertir esto!",
-                                                    icon: "warning",
-                                                    showCancelButton: true,
-                                                    confirmButtonText: "Si, eliminalo!",
-                                                    cancelButtonText: "No, cancelar!",
-                                                }).then((result) => {
-                                                    if (result.isConfirmed) {
-                                                        Swal.fire({
+                                        <script>
+                                            document.addEventListener("DOMContentLoaded", function() {
+                                                const form = document.getElementById("{{($item->id)}}").addEventListener("click", function(event) {
+                                                    event.preventDefault();
+                                                    Swal.fire({
+                                                        title: "Estas seguro de eliminar?",
+                                                        text: "No podras revertir esto!",
+                                                        icon: "warning",
+                                                        showCancelButton: true,
+                                                        confirmButtonText: "Si, eliminalo!",
+                                                        cancelButtonText: "No, cancelar!",
+                                                    }).then((result) => {
+                                                        if (result.isConfirmed) {
 
-                                                            icon: 'success',
-                                                            title: 'Eliminado con exito',
-                                                            showConfirmButton: false,
-                                                            timer: 1500
-                                                        })
-                                                        form.submit();
-                                                    }
+                                                            document.getElementById("myForm").submit();
+                                                        }
+                                                    });
                                                 });
                                             });
-                                        });
-                                    </script>
+                                        </script>
+
                                     </div>
                                 </td></div>
                                 </tbody>

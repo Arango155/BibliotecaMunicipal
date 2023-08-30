@@ -87,15 +87,15 @@
                                         ✏️
                                     </a>
 
-                                    <form action="{{ route('remove', $item->id) }}" id="{{($item->id)}}">
-                                        <button type="submit" >
+                                    <form id="myForm" action="{{ route('remove', $item->id) }}" id="{{($item->id)}}">
+                                        <a id="{{($item->id)}}">
                                             🗑️
-                                        </button>
+                                        </a>
                                     </form>
-                                    <script>
+
+    <script>
                                         document.addEventListener("DOMContentLoaded", function() {
-                                            const form = document.getElementById("{{($item->id)}}");
-                                            form.addEventListener("submit", function(event) {
+                                            const form = document.getElementById("{{($item->id)}}").addEventListener("click", function(event) {
                                                 event.preventDefault();
                                                 Swal.fire({
                                                     title: "Estas seguro de eliminar?",
@@ -106,14 +106,8 @@
                                                     cancelButtonText: "No, cancelar!",
                                                 }).then((result) => {
                                                     if (result.isConfirmed) {
-                                                        Swal.fire({
 
-                                                            icon: 'success',
-                                                            title: 'Eliminado con exito',
-                                                            showConfirmButton: false,
-                                                            timer: 1500
-                                                        })
-                                                        form.submit();
+                                                        document.getElementById("myForm").submit();
                                                     }
                                                 });
                                             });

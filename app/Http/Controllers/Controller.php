@@ -95,7 +95,7 @@ class Controller extends BaseController
     {
         $libros = Libro::find($id);
         $libros->delete();
-        return redirect()->route("librosview");
+        return redirect()->route("librosview")->with("success","Eliminado con exito!");
 
     }
 
@@ -107,7 +107,7 @@ class Controller extends BaseController
         catch (\Exception $exception){
             return redirect()->route("categoriasview")->with("title","No se puede eliminar esta categoria debido a que ya esta en uso");
         }
-        return redirect()->route("categoriasview");
+        return redirect()->route("categoriasview")->with("success", "Eliminado con exito");
 
     }
 
