@@ -4,9 +4,9 @@
 
 <div class="container">
 
-    <div class="card">
-        <h5 class="card-header">Editar categoria</h5>
-        <div class="card-body">
+    <div class="tab">
+        <h3>Editar categoria</h3>
+
             <p class="card-text">
 
             <form action="{{route('show', $item->id)}}" method="POST">
@@ -20,11 +20,11 @@
                 <input type="text" name="nombre" class="form-control" required value="{{$item->nombre}}">
 
                 <br>
-                <a href="categorias" class="btn btn-info">
-                    <span class="bi bi-arrow-return-left"></span> Regresar
+                <a href="categorias" class="btn btn-primary">
+                    <span class="bi bi-arrow-return-left"></span>
                 </a>
-                <button type="submit" class="btn btn-warning">
-                    <span  class="bi bi-arrow-up-circle-fill"></span>  Actualizar
+                <button type="submit" class="btn btn-primary">
+                    <span  class="bi bi-arrow-up-circle-fill"></span>
                 </button>
 
             </form>

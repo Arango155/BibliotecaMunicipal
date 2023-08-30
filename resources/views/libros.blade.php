@@ -6,9 +6,9 @@
 
 
 <div class="container">
-    <div class="card" >
-        <h5 class="card-header">Listado en el sistema</h5>
-        <div class="card-body">
+    <div class="tab">
+    <h3>Listado en el sistema</h3>
+
             <div>
                 <div class="col-sm-12">
                     @if($mensaje = \Illuminate\Support\Facades\Session::get('success'))
@@ -39,9 +39,14 @@
                         </div>
                         <div class="left">
                             <a href="/add" class="btn btn-primary">
-                                <span class="bi bi-plus"></span>  Agregar nuevo libro
+                                <span>Agregar</span>
                             </a>
-                        </div></div>
+                            <a href="excel"  class="btn btn-success">
+                                <span class="bi bi-file-excel"></span>
+                            </a>
+                        </div>
+
+                    </div>
 
 
                     <hr>
@@ -56,8 +61,8 @@
                             <th>Nombre</th>
                             <th>Autor</th>
                             <th>Categoria</th>
-                            <th>Editar</th>
-                            <th>Eliminar</th>
+                            <th>Acciones</th>
+
 
 
                             </thead>
@@ -74,15 +79,14 @@
 
                                 <td>
 
-
-                                    <a href="{{route('edit',$item->id)}}" class="btn btn-warning btn-sm">
-                                        <span class="bi bi-pen"></span>
+<div class="flex">
+                                    <a href="{{route('edit',$item->id)}}" >
+                                        ✏️
                                     </a>
-                                </td>
-                                <td>
+
                                     <form action="{{ route('remove', $item->id) }}" id="{{($item->id)}}">
-                                        <button type="submit" class="btn btn-danger btn-sm">
-                                            <span class="bi bi-trash"></span>
+                                        <button type="submit" >
+                                            🗑️
                                         </button>
                                     </form>
                                     <script>
@@ -112,6 +116,8 @@
                                             });
                                         });
                                     </script>
+
+</div>
                                 </td>
                             </tr>
                             @endforeach
@@ -124,23 +130,20 @@
 
 
 
-                        <a href="/home" class="btn btn-info">
-                            <span class="bi bi-arrow-return-left"></span> Regresar
+                        <a href="/home" class="btn btn-primary">
+                            <span class="bi bi-arrow-return-left"></span>
                         </a>
-                        <a href="excel"  class="btn btn-success">
-                            <span class="bi bi-file-excel"></span>Excel
-                        </a>
+
                         <a  class="btn btn-primary" href="libros">
-                            <span class="bi bi-book" ></span> Mostrar todos los libros
+                            <span class="bi bi-bootstrap-reboot" ></span>
                         </a>
 
 
                     </div>
 
-                </div>
 
-            </div>
-        </div>
+
+
 
 
 

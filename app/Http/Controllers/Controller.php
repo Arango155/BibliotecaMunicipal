@@ -35,6 +35,11 @@ class Controller extends BaseController
         return view('list', compact('items'));
     }
 
+    function public(){
+        $items = Libro::all();
+        return view('listp', compact('items'));
+    }
+
     function indexg(){
 
         $items = Categoria::orderBy('nombre','asc')->paginate(5);

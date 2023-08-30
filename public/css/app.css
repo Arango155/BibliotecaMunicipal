@@ -1,16 +1,4 @@
-/*body{*/
-/*    margin: 0;*/
-/*    font-family: sans-serif;*/
-/*    background-color: #1a202c;*/
-/*    color: white;*/
-/*}*/
 
-/*body{*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    list-style: none;*/
-/*    text-decoration: none;*/
-/*}*/
 
 .head{
     width: 100%;
@@ -24,14 +12,16 @@
 
 .left{
     float: left;
+
+
 }
 
-*{
-    font-family: 'SimpleSans', sans-serif;
-}
 
-.toggler:hover{
-    background: #efefef;
+
+
+.links span:hover{
+    text-decoration: underline;
+
 }
 
 .container{
@@ -113,13 +103,16 @@ input{
     text-align: justify;
 }
 
-
-.style:hover {
-    background-color: #F8F8F8;
+nav{
+    cursor: pointer;
 }
+
+
+
 
 a:hover {
     background-color: #F8F8F8;
+
 }
 
 
@@ -141,26 +134,48 @@ a:hover {
     margin: 3px;
 }
 
+.links{
+    padding-right: 30px;
+    margin: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+
+}
+
+
+
 
 .navlink {
     padding: 10px 15px;
     display: block;
-    border: 1px solid black;
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     border-radius: 4px;
 
-
 }
 
+
 .header span{
+
     font-weight: bold;
     font-size: 200%;
 }
 
-.header{
-    display: table-column;
+.tab h3{
+    padding-left: 17%;
+    font-weight: bold;
+    padding-bottom: 2%;
 }
+
+.col-sm-12 {
+    padding-left: 10%;
+    flex: 0 0 auto;
+    width: 80%;
+}
+.table{
+    width: 100%;
+}
+
 
 header a{
     font-size: 20px;
@@ -185,4 +200,49 @@ footer{
     padding-bottom: 10px;
 }
 
+.flex {
+    display: flex;
 
+}
+
+@media (max-width: 480px)
+.header span {
+    font-weight: bold;
+    font-size: unset !important;
+}
+
+
+@media (max-width: 480px) {
+
+    .header span{
+        font-weight: bold;
+        font-size: 100%;
+    }
+
+    .table-responsive{
+        width: 100%;
+    }
+
+    .btn-group{
+        width: 50%;
+        float: right;
+    }
+
+
+
+    .tab h3{
+        padding-left: unset;
+        font-weight: bold;
+        padding-bottom: 2%;
+    }
+
+    .col-sm-12 {
+        padding-left: 1%;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .table{
+        width: 100%;
+    }
+
+}

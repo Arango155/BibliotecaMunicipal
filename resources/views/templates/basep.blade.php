@@ -29,11 +29,7 @@
 
                 <span>Biblioteca Municipal</span>
             </div>
-            <div class="links">
-                <span><a href="list">Hogar  </a></span>
-            <span>    <a href="libros">Libros</a></span>
-               <span> <a href="categorias">  Categorias</a></span>
-            </div>
+
         </div>
 
     </nav>

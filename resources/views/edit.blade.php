@@ -4,9 +4,9 @@
 
 <div class="container">
 
-    <div class="card">
-        <h5 class="card-header">Editar libro</h5>
-        <div class="card-body">
+    <div class="tab">
+        <h3>Editar libro</h3>
+
             <p class="card-text">
 
             <form action="{{route('update', $item->id)}}" method="POST">
@@ -27,11 +27,11 @@
                 </select>
 
                 <br>
-                <a href="libros" class="btn btn-info">
-                    <span class="bi bi-arrow-return-left"></span> Regresar
+                <a href="libros" class="btn btn-primary">
+                    <span class="bi bi-arrow-return-left"></span>
                 </a>
-                <button type="submit" class="btn btn-warning">
-                    <span  class="bi bi-arrow-up-circle-fill"></span>  Actualizar
+                <button type="submit" class="btn btn-primary">
+                    <span  class="bi bi-check"></span>
                 </button>
 
             </form>

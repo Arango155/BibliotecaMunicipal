@@ -5,9 +5,8 @@
 @section('body')
 
 <div class="container" xmlns="http://www.w3.org/1999/html">
-
-    <div class="card">
-        <h5 class="card-header">Agregar nuevo libro</h5>
+    <div class="tab">
+        <h3>Agregar nuevo libro</h3>
         <div class="card-body">
 
             <p class="card-text">
@@ -30,11 +29,11 @@
                 <input type="file" name="pic" class="form-control" required>
 
                 <br>
-                <a href="/libros" class="btn btn-info">
-                    <span class="bi bi-arrow-return-left"></span> Regresar
+                <a href="/libros" class="btn btn-primary">
+                    <span class="bi bi-arrow-return-left"></span>
                 </a>
                 <button class="btn btn-primary">
-                    <span class="bi bi-check"></span>Agregar
+                    <span class="bi bi-check"></span>
                 </button>
 
             </form>

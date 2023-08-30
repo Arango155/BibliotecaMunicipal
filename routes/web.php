@@ -15,6 +15,7 @@ use App\Http\Controllers\Controller as controller;
 
 Route::get('/',[controller::class,'list'])->name('list');
 
+Route::get('public',[controller::class,'public'])->name('listp');
 
 Route::get('home',[controller::class,'list']);
 

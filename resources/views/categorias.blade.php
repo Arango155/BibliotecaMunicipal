@@ -6,9 +6,9 @@
 
 
 <div class="container">
-    <div class="card" >
-        <h5 class="card-header">Listado en el sistema</h5>
-        <div class="card-body">
+    <div class="tab" >
+        <h3>Listado en el sistema</h3>
+
             <div class="row">
                 <div class="col-sm-12">
                     @if($mensaje = \Illuminate\Support\Facades\Session::get('success'))
@@ -32,7 +32,7 @@
                         <!--        </div>-->
                         <p>
                             <a href="/addC" class="btn btn-primary">
-                                <span class="bi bi-plus"></span>  Agregar nueva categoria
+                                <span>Agregar</span>
                             </a>
                         </p>
                         <hr>
@@ -44,27 +44,25 @@
                                 <thead>
                                 <th>Id</th>
                                 <th>Categoria</th>
-                                <th>Editar</th>
-                                <th>Eliminar</th>
+                                <th>Acciones</th>
+
                                 </thead>
 
                                 <tbody>
                                 @foreach($items as $item)
                                 <td>{{$item->id}}</td>
                                 <td>{{$item->nombre}}</td>
+                                <div class="inline">
                                 <td>
-                                    <a href="{{route('modify',$item->id)}}" class="btn btn-warning btn-sm">
-                                        <i class="bi bi-pen"></i>
-                                    </a>
-                                </td>
-                                <td>
-
-
-                                    <form action="{{ route('destroy', $item->id) }}" id="{{($item->id)}}">
-                                        <button type="submit" class="btn btn-danger btn-sm">
-                                            <span class="bi bi-trash"></span>
+                                    <div class="flex">
+                                    <a href="{{route('modify',$item->id)}}" >
+                                        <span>✏️</span>
+                                    </a>  <form action="{{ route('destroy', $item->id) }}" id="{{($item->id)}}">
+                                        <button type="submit">
+                                            <span>  🗑️</span>
                                         </button>
                                     </form>
+
                                     <script>
                                         document.addEventListener("DOMContentLoaded", function() {
                                             const form = document.getElementById("{{($item->id)}}");
@@ -92,8 +90,8 @@
                                             });
                                         });
                                     </script>
-
-                                </td>
+                                    </div>
+                                </td></div>
                                 </tbody>
                                 @endforeach
 
@@ -102,8 +100,8 @@
 
 
 
-                            <a href="/home" class="btn btn-info">
-                                <span class="bi bi-arrow-return-left"></span> Regresar
+                            <a href="/home" class="btn btn-primary">
+                                <span class="bi bi-arrow-return-left"></span>
                             </a>
 
                         </div>
