@@ -7,10 +7,10 @@
 @section('body')
 
 <div class="container">
-    <div class="tab">
+    <div class="add">
             <h3>Agregar categoria</h3>
-
-        <div class="card-body">
+        <p>Asegurate de no agregar una categoria con el mismo codigo</p>
+        <div class="form">
 
             <p class="card-text">
             <form action="/storeC" method="POST">

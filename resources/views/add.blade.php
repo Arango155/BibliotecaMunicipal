@@ -4,16 +4,16 @@
 
 @section('body')
 
-<div class="container" xmlns="http://www.w3.org/1999/html">
-    <div class="tab">
+<div class="container">
+    <div class="add">
         <h3>Agregar nuevo libro</h3>
-        <div class="card-body">
-
+        <p>Asegurate de no agregar un libro con el mismo codigo</p>
+<div class="form">
             <p class="card-text">
             <form action="/store" method="POST">
                 @csrf
                 <label for="">Codigo</label>
-                <input type="text" name="id" class="form-control" required>
+                <input type="text" name="id"  class="form-control" required>
                 <label for="">Nombre</label>
                 <input type="text" name="nombre" class="form-control" required>
                 <label for="">Autor</label>
