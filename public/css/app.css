@@ -16,6 +16,28 @@
     float: right;
 }
 
+.content{
+    padding-top: 10%;
+    margin: 10px;
+    align-content: center;
+    text-align: center;
+}
+
+.content h1{
+    font-weight: bold;
+    font-size: 400%;
+}
+
+.content p{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.content button{
+    width: 20%;
+    font-size: 20px;
+}
+
 .links{
     padding-top: 8%;
     justify-content: space-between;
@@ -109,7 +131,7 @@ input{
 }
 
 nav{
-    cursor: pointer;
+
     z-index: 99;
     position: sticky !important;
     top: 0;
@@ -130,14 +152,6 @@ nav{
     justify-content: space-between;
     font-size: 20px;
     padding: 0 5% ;
-
-}
-
-
-
-
-a:hover {
-    background-color: #F8F8F8;
 
 }
 

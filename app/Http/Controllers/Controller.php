@@ -15,6 +15,10 @@ use Excel;
 
 class Controller extends BaseController
 {
+
+    function main(){
+        return view('main');
+    }
     function index()
     {
 
@@ -45,6 +49,8 @@ class Controller extends BaseController
         $items = Categoria::orderBy('nombre','asc')->paginate(5);
         return view('categorias',compact('items'));
     }
+
+
 
     function add()
     {
