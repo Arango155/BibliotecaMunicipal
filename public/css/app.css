@@ -6,23 +6,48 @@
 
 }
 
+.abt{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+
 .right {
     float: right;
 }
 
+.links{
+    padding-top: 8%;
+    justify-content: space-between;
+
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid with equal width columns */
+    gap: 30px;
+}
+
+
+.links a:hover {
+    background: #F8F8F8;
+
+    text-decoration: underline;
+}
+
+.links a{
+
+    color: black;
+    border-radius: 8px !important;
+text-align: center;
+   width: 120%;
+
+}
+
+
 .left{
     float: left;
-
-
 }
 
-
-
-
-.links span:hover{
-    text-decoration: underline;
-
-}
 
 .container{
     padding-top: 20px;
@@ -40,31 +65,6 @@
 
 
 
-.sidebar{
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    background: white;
-}
-
-.sidebar header{
-    font-size: 22px;
-    text-align: center;
-    background: #a0aec0;
-    line-height: 70px;
-}
-
-.sidebar ul a{
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 40px;
-    box-sizing: border-box;
-
-    /*border-bottom: 1px solid black;*/
-    transition: .4s;
-}
 
 a {
     text-decoration: unset;
@@ -103,8 +103,34 @@ input{
     text-align: justify;
 }
 
+.logo{
+    width: 8%;
+
+}
+
 nav{
     cursor: pointer;
+    z-index: 99;
+    position: sticky !important;
+    top: 0;
+    display: inline-block;
+    color: black;
+    padding: 0 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 100%;
+}
+
+.nav-content{
+
+    font-weight: bold;
+   margin: 1%;
+
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 0 5% ;
+
 }
 
 
@@ -116,9 +142,7 @@ a:hover {
 }
 
 
-.navbar-brand {
-    font-size: 40px;
-}
+
 
 .contact {
     text-align: center;
@@ -134,32 +158,8 @@ a:hover {
     margin: 3px;
 }
 
-.links{
-    padding-right: 30px;
-    margin: 20px;
-    font-weight: bold;
-    justify-content: space-between;
-
-}
 
 
-
-
-.navlink {
-    padding: 10px 15px;
-    display: block;
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    border-radius: 4px;
-
-}
-
-
-.header span{
-
-    font-weight: bold;
-    font-size: 200%;
-}
 
 .add{
     padding-left: 20%;
@@ -238,10 +238,6 @@ footer{
 
 @media (max-width: 480px) {
 
-    .header span{
-        font-weight: bold;
-        font-size: 100%;
-    }
 
     .table-responsive{
         width: 100%;
