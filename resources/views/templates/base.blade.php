@@ -42,9 +42,12 @@
                 <div class="abt">
 
                     <a href="/">
-                    <span>BiblioMuni</span>
 
-                        <img src="https://i.etsystatic.com/16421349/r/il/99a0b1/3585638490/il_fullxfull.3585638490_tigl.jpg" width="80px" height="90px">
+                        <span>
+                             <img src="https://images.emojiterra.com/twitter/v13.1/512px/1f4da.png" width="75px" height="75px">
+
+                            BiblioMuni</span>
+
 
 
 

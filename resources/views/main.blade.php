@@ -5,8 +5,11 @@
 @section('right')
 
 <div class="links">
-    <a href="login">Login</a>
-    <a href="register">Register</a>
+    <form action="{{ route('login') }}">
+        <button class="btn btn-dark" type="submit">Iniciar sesión</button>
+    </form>    <form action="{{route('register')}}">
+        <button class="btn btn-dark" type="submit">Regístrate</button>
+    </form>
 
 </div>
 @endsection
@@ -18,7 +21,10 @@
     <div class="content">
         <h1>Consultoria en linea</h1>
         <p>"Desbloquee conocimientos, un clic a la vez: ¡su biblioteca, a su manera!"</p>
-        <button class="btn btn-primary">Comienza ahora!</button>
+        <form action="register">
+
+            <button class="btn btn-primary">Comienza ahora!</button>
+        </form>
 
         <div class="video">
 

@@ -9,7 +9,7 @@
         <h3>Agregar nuevo libro</h3>
         <p>Asegurate de no agregar un libro con el mismo codigo</p>
 <div class="form">
-            <p class="card-text">
+    <p class="card-text">
             <form action="/store" method="POST">
                 @csrf
                 <label for="">Codigo</label>

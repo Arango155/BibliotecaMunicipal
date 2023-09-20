@@ -10,22 +10,30 @@
 
 @section('right')
 <!-- Right Side Of Navbar -->
-<ul class="navbar-nav ms-auto">
+
+<div class="links">
     <!-- Authentication Links -->
     @guest
     @if (Route::has('login'))
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-    </li>
+    <form action="{{ route('login') }}">
+        <button class="btn btn-dark" type="submit">Inicia sesión</button>
+    </form>
+
+
     @endif
 
     @if (Route::has('register'))
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-    </li>
+
+
+    <form action="{{route('register')}}">
+        <button class="btn btn-dark" type="submit">Regístrate</button>
+    </form>
     @endif
+</div>
     @else
-    <li class="nav-item dropdown">
+
+<div class="right-top">
+    <div class="nav-item dropdown">
         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
             {{ Auth::user()->name }}
         </a>
@@ -41,10 +49,9 @@
                 @csrf
             </form>
         </div>
-    </li>
+    </div></div>
     @endguest
-</ul>
-</div>
+
 @endsection
 
 
@@ -58,6 +65,6 @@
         @yield('content')
     </main>
 </div>
-
+</div>
 @endsection
 </html>
