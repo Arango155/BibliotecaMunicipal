@@ -10,7 +10,7 @@
         <p>Asegurate de no agregar un libro con el mismo codigo</p>
 <div class="form">
     <p class="card-text">
-            <form action="/store" method="POST">
+            <form action="store" method="POST">
                 @csrf
                 <label for="">Codigo</label>
                 <input type="text" name="id"  class="form-control" required>
@@ -29,7 +29,7 @@
                 <input type="file" name="pic" class="form-control" required>
 
                 <br>
-                <a href="/libros" class="btn btn-primary">
+                <a href="libros" class="btn btn-primary">
                     <span class="bi bi-arrow-return-left"></span>
                 </a>
                 <button class="btn btn-primary">

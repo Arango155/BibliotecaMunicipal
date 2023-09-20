@@ -48,7 +48,7 @@
 
                         </div>
                         <div class="left">
-                            <a href="/addC" class="btn btn-primary">
+                            <a href="addC" class="btn btn-primary">
                                 <span>Agregar</span>
                             </a>
 

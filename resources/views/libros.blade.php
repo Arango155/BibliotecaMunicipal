@@ -40,7 +40,7 @@
 
                         </div>
                         <div class="left">
-                            <a href="/add" class="btn btn-primary">
+                            <a href="add" class="btn btn-primary">
                                 <span>Agregar</span>
                             </a>
                             <a href="excel"  class="btn btn-success">

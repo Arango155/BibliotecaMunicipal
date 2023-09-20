@@ -13,7 +13,7 @@
         <div class="form">
 
             <p class="card-text">
-            <form action="/storeC" method="POST">
+            <form action="storeC" method="POST">
                 @csrf
                 <label for="">Codigo de la Categoria</label>
                 <input type="text" name="id" class="form-control" required>
@@ -21,7 +21,7 @@
                 <input type="text" name="nombre" class="form-control" required>
 
                 <br>
-                <a href="home" class="btn btn-primary">
+                <a href="categorias" class="btn btn-primary">
                     <span class="bi bi-arrow-return-left"></span>
                 </a>
                 <button class="btn btn-primary">

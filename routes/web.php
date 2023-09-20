@@ -37,7 +37,7 @@ Route::prefix('admin')->middleware(['auth','is_admin'])->group(function ()
 
     Route::get('list',[controller::class,'list'])->name('list');
 
-    Route::get('add',[controller::class, 'add']);
+    Route::get('add',[controller::class, 'add'])->name('add');
 
     Route::post('store', [controller::class, 'store']);
 
