@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Exports\ExportName;
 use App\Models\Categoria;
+use App\Models\Estado;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
@@ -55,7 +56,8 @@ class Controller extends BaseController
     function add()
     {
         $categoriaitem = Categoria::all();
-        return view('add',compact('categoriaitem'));
+        $estado=Estado::all();
+        return view('add',compact('categoriaitem','estado'));
     }
 
     function store(Request $request)
@@ -66,9 +68,17 @@ class Controller extends BaseController
             $libro->nombre = $request->post('nombre');
             $libro->autor = $request->post('autor');
             $libro->categoria_id = $request->post('categoria_id');
+            $libro->estado_id =$request->post('estado_id');
             $libro->img =$request->post('img');
 
+            if ($libro->img == null){
+                $libro->img="https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.webp?b=1&s=170667a&w=0&k=20&c=mBzy59I9bsnIZovbYsdUWVntwTFpbOAa3TTByYo7lG4=";
+            }
+
+
             $libro->save();
+
+
         }
         catch (\Exception $exception){
             return redirect()->route("librosview")->with("title","Error: Ha creado un libro con el mismo codigo, este debe ser unico");
@@ -121,7 +131,8 @@ class Controller extends BaseController
     public function edit($id){
         $categoriaitem = Categoria::all();
         $item = Libro::find($id);
-        return view('edit', compact('item', 'categoriaitem'));
+        $estado = Estado::all();
+        return view('edit', compact('item', 'categoriaitem','estado'));
     }
 
     function update(Request $request, $id)
@@ -130,6 +141,8 @@ class Controller extends BaseController
         $item->nombre = $request->post('nombre');
         $item->autor = $request->post('autor');
         $item->categoria_id = $request->post('categoria_id');
+        $item->estado_id = $request->post('estado_id');
+//        $item->img=$request->post('img');
         $item->save();
         return redirect()->route("librosview")->with("success", "Editado con exito!");
 

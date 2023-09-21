@@ -18,6 +18,7 @@
 
 .right {
     float: right;
+    padding-bottom: 2%;
 }
 
 .content{
@@ -163,18 +164,20 @@ input{
 }
 
 nav{
-    height: 100px;
+
     z-index: 99;
     position: sticky !important;
     top: 0;
     display: inline-block;
     color: black;
-    padding: 0 10px;
+    padding: 0 8px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     width: 100%;
 }
+
+
 
 
 .nav-content{

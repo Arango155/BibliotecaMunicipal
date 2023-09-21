@@ -24,9 +24,16 @@
                     @foreach($categoriaitem as $object)
                     <option value="{{ $object->id }}">{{ $object->nombre }}</option>
                     @endforeach
+                        </select>
+        <label for="">Estado</label>
+                <select name="estado_id" class="form-control" required>
+                    <option value="">Seleccione el estado actual del libro</option>
+                    @foreach($estado as $estado)
+                    <option value="{{ $estado->id }}">{{ $estado->nombre }}</option>
+                    @endforeach
                 </select>
                 <label for="">Imagen</label>
-                <input type="file" name="img" class="form-control" required>
+                <input type="file" name="img" class="form-control">
 
                 <br>
                 <a href="libros" class="btn btn-primary">

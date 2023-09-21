@@ -64,6 +64,7 @@
                             <th>Nombre</th>
                             <th>Autor</th>
                             <th>Categoria</th>
+                            <th>Estado</th>
                             <th>Acciones</th>
 
 
@@ -79,6 +80,7 @@
                                 <td>{{$item->nombre }}</td>
                                 <td>{{$item->autor }}</td>
                                 <td>{{$item->categoria->nombre}}</td>
+                                <td>{{$item->estado->nombre}}</td>
 
                                 <td>
 
