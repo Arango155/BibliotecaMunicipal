@@ -66,6 +66,7 @@ class Controller extends BaseController
             $libro->nombre = $request->post('nombre');
             $libro->autor = $request->post('autor');
             $libro->categoria_id = $request->post('categoria_id');
+            $libro->img =$request->post('img');
 
             $libro->save();
         }

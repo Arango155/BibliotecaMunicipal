@@ -25,8 +25,8 @@
                     <option value="{{ $object->id }}">{{ $object->nombre }}</option>
                     @endforeach
                 </select>
-                <label for="">Imagen </label>
-                <input type="file" name="pic" class="form-control" required>
+                <label for="">Imagen</label>
+                <input type="file" name="img" class="form-control" required>
 
                 <br>
                 <a href="libros" class="btn btn-primary">
