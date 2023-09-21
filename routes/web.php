@@ -20,13 +20,17 @@ use App\Http\Controllers\Controller as controller;
 
 Route::get('/', [controller::class, 'main']) ->name("/");
 
-Route::get('/main', [controller::class, 'main']);
-
 
 Route::get('/public',[controller::class,'public']);
 
 
 //Admin
+
+
+
+//Route::middleware(['auth','is_admin'])->group(function ()
+//
+//{
 
 Route::prefix('admin')->middleware(['auth','is_admin'])->group(function ()
 
@@ -70,8 +74,6 @@ Route::prefix('admin')->middleware(['auth','is_admin'])->group(function ()
 );
 
 
-
 Auth::routes();
-
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -23,11 +23,11 @@ class AdminMiddleware
 
             return $next($request);
         } else {
-            return redirect('/home')->with('message','Acceso denegado no eres admin');
+            return redirect('public')->with('message','Acceso denegado no eres admin');
         }
 
         } else {
-            return redirect('/login')->with('message','Registrate para acceso a la pagina');
+            return redirect('login')->with('message','Registrate para acceso a la pagina');
         }
 
         return $next($request);

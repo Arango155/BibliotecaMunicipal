@@ -12,9 +12,6 @@
 
             <div class="add">
 
-
-
-
                 <div class="form">
                     <p class="card-text">
                     <form method="POST" action="{{ route('register') }}">

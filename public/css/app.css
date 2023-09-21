@@ -49,9 +49,42 @@
     padding-top: 15px;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid with equal width columns */
+    grid-template-columns: repeat(2, 1fr); /* Creates a 3-column grid with equal width columns */
     gap: 100px;
 }
+
+.spacel{
+    padding-top: 15px;
+}
+
+.link{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    width: 120%;
+}
+
+.link:hover{
+    background: #EFEFEF;
+    border-radius: 30px;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.linksn{
+    /*padding-top: 3%;*/
+    justify-content: space-between;
+    padding-top: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates a 3-column grid with equal width columns */
+    gap: 25px;
+}
+
+.linksn a:hover{
+    text-decoration: underline;
+}
+
 
 
 .links button:hover {

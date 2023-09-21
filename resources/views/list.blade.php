@@ -1,14 +1,8 @@
-@extends('templates/base')
+@extends('templates/adminbase')
 
 
 
-@section('right')
-<div class="links">
-    <a href="list">Hogar  </a>
-    <a href="libros">Libros</a>
-    <a href="categorias">  Categorias</a>
-</div>
-@endsection
+
 
 @section('body')
 

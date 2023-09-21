@@ -1,4 +1,4 @@
-@extends('templates/base')
+@extends('templates/adminbase')
 
 
 @section('body')
@@ -114,7 +114,7 @@
 
 
 
-                            <a href="/home" class="btn btn-primary">
+                            <a href="list" class="btn btn-primary">
                                 <span class="bi bi-arrow-return-left"></span>
                             </a>
 
