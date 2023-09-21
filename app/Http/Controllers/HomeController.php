@@ -31,5 +31,13 @@ class HomeController extends Controller
         return view('auth/login');
     }
 
+    public function admin(){
+        return view('list');
+    }
+
+    public function user(){
+        return view('public');
+    }
+
 
 }

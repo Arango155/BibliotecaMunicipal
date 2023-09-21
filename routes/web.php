@@ -26,13 +26,20 @@ Route::get('/public',[controller::class,'public']);
 
 //Admin
 
+Auth::routes();
 
+Route::middleware(['auth','is_user'])->group(function ()
 
-//Route::middleware(['auth','is_admin'])->group(function ()
-//
-//{
+{
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'user'])->name('home');
 
-Route::prefix('admin')->middleware(['auth','is_admin'])->group(function ()
+});
+
+Route::middleware(['auth','is_admin'])->group(function (){
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'admin'])->name('home');
+});
+
+Route::middleware(['auth','is_admin'])->group(function ()
 
 {
     Route::get('home',[controller::class,'list']);
@@ -74,6 +81,5 @@ Route::prefix('admin')->middleware(['auth','is_admin'])->group(function ()
 );
 
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
