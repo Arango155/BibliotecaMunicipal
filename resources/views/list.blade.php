@@ -35,7 +35,6 @@
                 <h3 class="card-title">{{$item->nombre }}</h3>
                 <h5 class="card-title">{{$item->categoria->nombre}}</h5>
                 <p class="card-text">Autor: {{$item->autor}}</p>
-                <p class="card-text">Estado: {{$item->estado->nombre}}</p>
 
                 @if($item->estado->id==1)
                 <button class="btn btn-success">Disponible</button>

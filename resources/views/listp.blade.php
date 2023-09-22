@@ -1,19 +1,21 @@
 @extends('templates/base')
 
+
 @section('right')
+
 <div class="spacel"></div>
 <div class="link">
     <div class="nav-item dropdown">
-        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-            {{ Auth::user()->name }}
-        </a>
+            <span id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                {{ Auth::user()->name }}
+            </span>
 
         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{{ route('logout') }}"
-               onclick="event.preventDefault();
+                <span class="dropdown-item" href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
-            </a>
+                    {{ __('Logout') }}
+                </span>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                 @csrf
@@ -21,15 +23,10 @@
         </div>
     </div>
 </div>
-
-
 @endsection
 
 
 @section('body')
-
-
-
 
 <div class="container">
     <div class="head">
@@ -55,13 +52,21 @@
     <div class="row"> @foreach($items as $item)
         <div class="col space">
             <div class="card element" >
-                <img src="https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.webp?b=1&s=170667a&w=0&k=20&c=mBzy59I9bsnIZovbYsdUWVntwTFpbOAa3TTByYo7lG4=" class="card-img-top" alt="Imagen de libro">
+                <img src="{{$item->img}}" class="card-img-top" alt="Imagen de libro">
                 <div class="card-body">
                     <h3 class="card-title">{{$item->nombre }}</h3>
                     <h5 class="card-title">{{$item->categoria->nombre}}</h5>
                     <p class="card-text">Autor: {{$item->autor}}</p>
 
-                    <a href="#" class="btn btn-primary">Consultar</a>
+                    @if($item->estado->id==1)
+                    <button class="btn btn-success">Disponible</button>
+                    @elseif($item->estado->id==2)
+                    <button class="btn btn-warning">Ocupado</button>
+                    @elseif($item->estado->id==3)
+                    <button class="btn btn-danger">No disponible</button>
+                    @endif
+
+                    <a href="#" id="{{$item->id}}" class="btn btn-primary">Consultar</a>
                 </div>
             </div>
         </div>
